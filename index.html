@@ -186,6 +186,19 @@
             border-color: var(--primary-color) !important;
             color: var(--primary-color) !important;
         }
+
+        /* Clients slider */
+        #clients .clients-slider {
+            transition: transform 0.5s ease;
+            cursor: grab;
+        }
+        #clients .clients-slider.grabbing {
+            cursor: grabbing;
+        }
+        #clients .client-item img {
+            max-height: 50px;
+            opacity: 0.7;
+        }
     </style>
 </head>
 <body>
@@ -216,20 +229,42 @@
         <div class="container">
             <br><br>
             <div class="row align-items-center">
-                <div class="col-lg-6">
-                    
-                    <h1 class="hero-title">Transformo ideias em <br><span>Sistemas Eficientes</span></h1>
-                    <p class="lead text-muted my-4">
-                        Analista e Desenvolvedor de Sistemas especializado em criar soluções web modernas, escaláveis e focadas na experiência do usuário.
-                    </p>
-                    <div class="d-flex gap-3 justify-content-lg-start justify-content-center">
-                        <a href="#portfolio" class="btn btn-primary btn-lg rounded-pill px-5">Ver Projetos</a>
-                        <a href="#contact" class="btn btn-outline-dark btn-lg rounded-pill px-5">Fale Comigo</a>
-                    </div>
-                </div>
                 <div class="col-lg-6 text-center">
                     <!-- Substitua o src pela sua foto -->
                     <img src="EU.png" alt="Coding" class="img-fluid hero-img">
+                </div>
+                <div class="col-lg-6">
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-icon"><i class="bi bi-envelope"></i></div>
+                        <div>
+                            <h5 class="fw-bold mb-0">Email</h5>
+                            <p class="text-muted mb-0"><a href="mailto:cbcaetanoborges@gmail.com" target="_blank" style="color:black;text-decoration: none;">cbcaetanoborges@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-icon"><i class="bi bi-telephone"></i></div>
+                        <div>
+                            <h5 class="fw-bold mb-0">Telefone / WhatsApp</h5>
+                            <p class="text-muted mb-0"><a href="tel:+244921797626" target="_blank" style="color:black;text-decoration: none;">(+244) 921797626</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-icon"><i class="bi bi-geo-alt"></i></div>
+                        <div>
+                            <h5 class="fw-bold mb-0">Localização</h5>
+                            <p class="text-muted mb-0">Lubango, Angola - Disponível para remoto</p>
+                        </div>
+                    </div>
+                    <br>
+                    <ul>
+                        <li>Soluções abrangentes de gestão empresarial</li>
+                        <li>Soluções escaláveis e seguras</li>
+                        <li>Soluções personalizadas feitas à sua medida</li>
+                        <li>Suporte fiável quando precisar</li> <br>
+                        <p>Dedico-me a fornecer serviços de consultoria e TI abrangentes que impulsionam o sucesso dos nossos clientes. A minha equipa de especialistas utiliza tecnologia avançada e visão estratégica.
+                            <br>Insights para implementar soluções adaptadas às suas necessidades, garantindo a excelência em cada etapa.</p>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -350,7 +385,35 @@
             </div>
         </div>
     </section>
-
+    <!-- Slide com logotipos de marcas que já trabalharam comigo -->
+    <section id="clients" class="py-5">
+        <div class="container">
+            <div class="clients-slider d-flex overflow-hidden">
+                <!-- cada .client-item ocupa 25% para exibir 4 logos simultaneamente -->
+                <div class="client-item d-flex align-items-center justify-content-center" style="flex:0 0 25%;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/2560px-Microsoft_logo.svg.png" alt="Microsoft" class="img-fluid" style="max-height: 50px; opacity: 0.7;">
+                </div>
+                <div class="client-item d-flex align-items-center justify-content-center" style="flex:0 0 25%;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png" alt="Google" class="img-fluid" style="max-height: 50px; opacity: 0.7;">
+                </div>
+                <div class="client-item d-flex align-items-center justify-content-center" style="flex:0 0 25%;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Apple_Logo_black.svg/2560px-Apple_Logo_black.svg.png" alt="Apple" class="img-fluid" style="max-height: 50px; opacity: 0.7;">
+                </div>
+                <div class="client-item d-flex align-items-center justify-content-center" style="flex:0 0 25%;">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Oracle_logo.svg/2560px-Oracle_logo.svg.png" alt="Oracle" class="img-fluid" style="max-height: 50px; opacity: 0.7;">
+                </div>
+                <div class="client-item d-flex align-items-center justify-content-center" style="flex:0 0 25%;">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/dd/SAP_2011_logo.svg/2560px-SAP_2011_logo.svg.png" alt="SAP" class="img-fluid" style="max-height: 50px; opacity: 0.7;">
+                </div>
+                <div class="client-item d-flex align-items-center justify-content-center" style="flex:0 0 20%;">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/dd/SAP_2011_logo.svg/2560px-SAP_2011_logo.svg.png" alt="SAP" class="img-fluid" style="max-height: 50px; opacity: 0.7;">
+                </div>
+                <div class="client-item d-flex align-items-center justify-content-center" style="flex:0 0 20%;">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/dd/SAP_2011_logo.svg/2560px-SAP_2011_logo.svg.png" alt="SAP" class="img-fluid" style="max-height: 50px; opacity: 0.7;">
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Contato -->
     <section id="contact">
         <div class="container">
@@ -360,27 +423,10 @@
             </div>
             <div class="row">
                 <div class="col-lg-5 mb-4 mb-lg-0">
-                    <div class="contact-info-item">
-                        <div class="contact-icon"><i class="bi bi-envelope"></i></div>
-                        <div>
-                            <h5 class="fw-bold mb-0">Email</h5>
-                            <p class="text-muted mb-0">cbcaetanoborges@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-info-item">
-                        <div class="contact-icon"><i class="bi bi-telephone"></i></div>
-                        <div>
-                            <h5 class="fw-bold mb-0">Telefone / WhatsApp</h5>
-                            <p class="text-muted mb-0">(+244) 921797626</p>
-                        </div>
-                    </div>
-                    <div class="contact-info-item">
-                        <div class="contact-icon"><i class="bi bi-geo-alt"></i></div>
-                        <div>
-                            <h5 class="fw-bold mb-0">Localização</h5>
-                            <p class="text-muted mb-0">Lubango, Angola - Disponível para remoto</p>
-                        </div>
-                    </div>
+                    <h1 class="hero-title">Transformo ideias em <br><span>Sistemas Eficientes</span></h1>
+                    <p class="lead text-muted my-4">
+                        Analista e Desenvolvedor de Sistemas especializado em criar soluções web modernas, escaláveis e focadas na experiência do usuário.
+                    </p>
                 </div>
                 
                 <div class="col-lg-7">
@@ -455,6 +501,89 @@
                 navbar.style.boxShadow = "0 2px 15px rgba(0,0,0,0.05)";
             }
         });
+
+        // Slider automático de clientes (apresenta 5 itens de cada vez) com pausa e drag
+        (function() {
+            const slider = document.querySelector('#clients .clients-slider');
+            if (!slider) return;
+            let busy = false;
+            const speed = 3000; // intervalo em ms
+            let intervalID;
+            let startX = 0;
+            let deltaX = 0;
+            let dragging = false;
+
+            function slideNext() {
+                if (busy) return;
+                busy = true;
+                slider.style.transition = 'transform 0.5s';
+                slider.style.transform = 'translateX(-25%)';
+                slider.addEventListener('transitionend', function handler() {
+                    slider.removeEventListener('transitionend', handler);
+                    slider.style.transition = 'none';
+                    slider.appendChild(slider.firstElementChild);
+                    slider.style.transform = 'translateX(0)';
+                    busy = false;
+                });
+            }
+
+            function slidePrev() {
+                if (busy) return;
+                busy = true;
+                // move last element to front and shift left
+                slider.insertBefore(slider.lastElementChild, slider.firstElementChild);
+                slider.style.transition = 'none';
+                slider.style.transform = 'translateX(-25%)';
+                // force reflow
+                slider.offsetWidth;
+                slider.style.transition = 'transform 0.5s';
+                slider.style.transform = 'translateX(0)';
+                slider.addEventListener('transitionend', function handler() {
+                    slider.removeEventListener('transitionend', handler);
+                    busy = false;
+                });
+            }
+
+            function startAuto() {
+                intervalID = setInterval(slideNext, speed);
+            }
+            function stopAuto() {
+                clearInterval(intervalID);
+            }
+
+            // hover pause
+            slider.addEventListener('mouseenter', stopAuto);
+            slider.addEventListener('mouseleave', () => {
+                if (!dragging) startAuto();
+            });
+
+            // pointer drag/swipe
+            slider.addEventListener('pointerdown', (e) => {
+                dragging = true;
+                stopAuto();
+                startX = e.clientX;
+                deltaX = 0;
+                slider.classList.add('grabbing');
+                slider.setPointerCapture(e.pointerId);
+            });
+            slider.addEventListener('pointermove', (e) => {
+                if (!dragging) return;
+                deltaX = e.clientX - startX;
+                // we could add a small transform while dragging if desired
+            });
+            slider.addEventListener('pointerup', (e) => {
+                dragging = false;
+                slider.classList.remove('grabbing');
+                slider.releasePointerCapture(e.pointerId);
+                if (Math.abs(deltaX) > 50) {
+                    if (deltaX < 0) slideNext();
+                    else slidePrev();
+                }
+                startAuto();
+            });
+
+            startAuto();
+        })();
     </script>
 </body>
 </html>
